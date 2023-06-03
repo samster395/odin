@@ -1,35 +1,61 @@
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 
-.header{
+.top{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #1F2937;
     color: #F9FAF8;
-    font-size: 24px;
     margin: 0;
     padding: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+}
+
+button.hero {
+    align-self: flex-start;
+    border-radius: 5px;
+    border-style: none;
+    width: 80px;
+    height: 30px;
+}
+
+.hero {
+    flex-basis: 200px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    flex-basis: 400px;
 }
 
 a {
     color: white;
 }
 
-.hero {
-    display: flex;
-    background-color: #1F2937;
-    height: 300px;
-    padding-left: 50px;
-    padding-right: 50px;
+h2.header {
+    font-size: 24px;
+    font-weight: 800;
+    color: #F9FAF8;
 }
 
-.hero p {
+p.hero {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.hero h2 {
+h2.hero {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
@@ -45,10 +71,33 @@ button {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    margin: 20px;
 }
 
 .gallery {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
+}
+
+.gallery figure{
+    width: 100px;
+}
+
+.gallery img{
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    text-align: center;
+    color: #1F2937;
+
+}
+
+.quote h3 {
+    font-size: 36px;
 }
