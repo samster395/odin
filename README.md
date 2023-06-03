@@ -1,1 +1,1 @@
-# Repo for The Odin project
+# Repo for [The Odin Project](https://www.theodinproject.com/)
